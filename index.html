@@ -1,11 +1,496 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Os Quatro Sabores | Brasil</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h2>Receitas favoritas</h2>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+
+                <a class="navbar-brand fw-bold" href="#inicio">
+                    Os Quatro Sabores
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#paises">Países</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#receitas">Receitas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <!-- APRESENTAÇÃO DO BRASIL -->
+        <section id="paises" class="py-5 bg-light">
+            <div class="container text-center">
+
+                <p class="mb-2">Países / Brasil</p>
+
+                <h1 class="display-4 fw-bold">🇧🇷 Brasil</h1>
+
+                <p class="lead">
+                    Descubra os sabores da culinária brasileira,
+                    uma mistura de tradições, culturas e ingredientes.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- LISTA DE RECEITAS -->
+        <section id="receitas" class="py-5">
+            <div class="container">
+
+                <h2 class="text-center mb-4">
+                    Receitas Brasileiras
+                </h2>
+
+                <!-- FILTROS -->
+                <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+                    <button class="btn btn-success filtro" data-filtro="todos">
+                        Todas (2)
+                    </button>
+
+                    <button class="btn btn-outline-success filtro" data-filtro="salgado">
+                        Salgadas (1)
+                    </button>
+
+                    <button class="btn btn-outline-success filtro" data-filtro="doce">
+                        Doces (1)
+                    </button>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- ARROZ CARRETEIRO -->
+                    <div class="col-12 col-md-6 receita-card" data-tipo="salgado">
+                        <article class="card h-100 shadow-sm">
+
+                            <!-- CARROSSEL ARROZ CARRETEIRO -->
+                            <div id="carouselArroz" class="carousel slide" data-bs-ride="false">
+
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselArroz" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Foto 1"></button>
+
+                                    <button type="button" data-bs-target="#carouselArroz" data-bs-slide-to="1"
+                                        aria-label="Foto 2"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <img src="img/arroz-1.jpeg" class="d-block w-100"
+                                            alt="Primeira foto do Arroz Carreteiro">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="img/arroz-2.jpeg" class="d-block w-100"
+                                            alt="Segunda foto do Arroz Carreteiro">
+                                    </div>
+
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselArroz"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselArroz"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próxima</span>
+                                </button>
+
+                            </div>
+
+                            <div class="card-body">
+                                <span class="badge text-bg-success mb-2">
+                                    Salgado
+                                </span>
+
+                                <h3 class="card-title h4">
+                                    Arroz Carreteiro
+                                </h3>
+
+                                <p class="card-text">
+                                    Um prato tradicional brasileiro feito
+                                    com arroz, carne seca, bacon,
+                                    linguiça calabresa e temperos.
+                                </p>
+
+                                <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#detalhesArroz" aria-expanded="false" aria-controls="detalhesArroz">
+                                    Ver receita
+                                </button>
+
+                                <!-- DETALHES DO ARROZ CARRETEIRO -->
+                                <div class="collapse mt-3" id="detalhesArroz">
+
+                                    <hr>
+
+                                    <h4 class="mb-3">Ingredientes</h4>
+
+                                    <div class="ingredientes">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing1">
+                                            <label class="form-check-label" for="arroz-ing1">
+                                                400g de carne seca dessalgada e cozida
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing2">
+                                            <label class="form-check-label" for="arroz-ing2">
+                                                150g de bacon picado
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing3">
+                                            <label class="form-check-label" for="arroz-ing3">
+                                                1 linguiça calabresa picada
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing4">
+                                            <label class="form-check-label" for="arroz-ing4">
+                                                2 xícaras de arroz branco cru
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing5">
+                                            <label class="form-check-label" for="arroz-ing5">
+                                                1 cebola grande picada
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing6">
+                                            <label class="form-check-label" for="arroz-ing6">
+                                                3 dentes de alho picados
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing7">
+                                            <label class="form-check-label" for="arroz-ing7">
+                                                2 tomates picados sem sementes
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing8">
+                                            <label class="form-check-label" for="arroz-ing8">
+                                                1/2 pimentão amarelo ou vermelho (opcional)
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing9">
+                                            <label class="form-check-label" for="arroz-ing9">
+                                                Cerca de 4 xícaras de água quente
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing10">
+                                            <label class="form-check-label" for="arroz-ing10">
+                                                Cheiro-verde a gosto
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing11">
+                                            <label class="form-check-label" for="arroz-ing11">
+                                                1 colher de sopa de azeite ou óleo
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="arroz-ing12">
+                                            <label class="form-check-label" for="arroz-ing12">
+                                                Sal e pimenta-do-reino a gosto
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <hr>
+
+                                    <h4 class="mb-3">Modo de preparo</h4>
+
+                                    <ol class="modo-preparo">
+                                        <li>
+                                            Dessalgue a carne seca, cozinhe até ficar macia
+                                            e corte em cubos ou desfie.
+                                        </li>
+                                        <li>
+                                            Em uma panela grande, aqueça o azeite e frite
+                                            o bacon até dourar.
+                                        </li>
+                                        <li>
+                                            Acrescente a linguiça calabresa e deixe dourar.
+                                        </li>
+                                        <li>
+                                            Adicione a cebola, o alho, os tomates e o
+                                            pimentão. Refogue bem.
+                                        </li>
+                                        <li>
+                                            Coloque a carne seca e misture com os temperos.
+                                        </li>
+                                        <li>
+                                            Acrescente o arroz cru e refogue por alguns minutos.
+                                        </li>
+                                        <li>
+                                            Adicione a água quente e ajuste o sal e a pimenta.
+                                        </li>
+                                        <li>
+                                            Cozinhe em fogo baixo até o arroz ficar macio
+                                            e a água secar.
+                                        </li>
+                                        <li>
+                                            Finalize com cheiro-verde e sirva quente.
+                                        </li>
+                                    </ol>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- PAMONHA DOCE -->
+                    <div class="col-12 col-md-6 receita-card" data-tipo="doce">
+                        <article class="card h-100 shadow-sm">
+
+                            <!-- CARROSSEL PAMONHA DOCE -->
+                            <div id="carouselPamonha" class="carousel slide" data-bs-ride="false">
+
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselPamonha" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Foto 1"></button>
+
+                                    <button type="button" data-bs-target="#carouselPamonha" data-bs-slide-to="1"
+                                        aria-label="Foto 2"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <img src="img/pamonha-1.jpeg" class="d-block w-100"
+                                            alt="Primeira foto da Pamonha Doce">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="img/pamonha-2.jpeg" class="d-block w-100"
+                                            alt="Segunda foto da Pamonha Doce">
+                                    </div>
+
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPamonha"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselPamonha"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próxima</span>
+                                </button>
+
+                            </div>
+
+                            <div class="card-body">
+                                <span class="badge text-bg-warning mb-2">
+                                    Doce
+                                </span>
+
+                                <h3 class="card-title h4">
+                                    Pamonha Doce
+                                </h3>
+
+                                <p class="card-text">
+                                    Uma delícia tradicional preparada
+                                    com milho verde, leite, açúcar
+                                    e manteiga, envolvida na palha.
+                                </p>
+
+                                <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#detalhesPamonha" aria-expanded="false"
+                                    aria-controls="detalhesPamonha">
+                                    Ver receita
+                                </button>
+
+                                <!-- DETALHES DA PAMONHA DOCE -->
+                                <div class="collapse mt-3" id="detalhesPamonha">
+
+                                    <hr>
+
+                                    <h4 class="mb-3">Ingredientes</h4>
+
+                                    <div class="ingredientes">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pamonha-ing1">
+                                            <label class="form-check-label" for="pamonha-ing1">
+                                                6 espigas grandes de milho verde com palhas
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pamonha-ing2">
+                                            <label class="form-check-label" for="pamonha-ing2">
+                                                1/2 xícara de leite ou leite de coco
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pamonha-ing3">
+                                            <label class="form-check-label" for="pamonha-ing3">
+                                                1 xícara de açúcar
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pamonha-ing4">
+                                            <label class="form-check-label" for="pamonha-ing4">
+                                                1 colher de sopa de manteiga derretida
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pamonha-ing5">
+                                            <label class="form-check-label" for="pamonha-ing5">
+                                                1 pitada de sal
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pamonha-ing6">
+                                            <label class="form-check-label" for="pamonha-ing6">
+                                                Queijo minas ou meia cura (opcional)
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <hr>
+
+                                    <h4 class="mb-3">Modo de preparo</h4>
+
+                                    <ol class="modo-preparo">
+                                        <li>
+                                            Retire cuidadosamente as palhas das espigas
+                                            e reserve as maiores para embrulhar as pamonhas.
+                                        </li>
+                                        <li>
+                                            Limpe as espigas e retire os grãos de milho
+                                            utilizando uma faca.
+                                        </li>
+                                        <li>
+                                            Bata o milho no liquidificador com o leite
+                                            até obter uma mistura cremosa.
+                                        </li>
+                                        <li>
+                                            Acrescente o açúcar, a manteiga derretida
+                                            e uma pitada de sal. Misture bem.
+                                        </li>
+                                        <li>
+                                            Dobre as palhas formando pequenos envelopes
+                                            e coloque a mistura dentro.
+                                        </li>
+                                        <li>
+                                            Se desejar, acrescente tiras de queijo
+                                            antes de fechar as pamonhas.
+                                        </li>
+                                        <li>
+                                            Feche bem as palhas e amarre com tiras
+                                            de palha ou barbante culinário.
+                                        </li>
+                                        <li>
+                                            Coloque as pamonhas em uma panela grande
+                                            com água fervente e cozinhe por aproximadamente
+                                            40 a 60 minutos, até ficarem firmes.
+                                        </li>
+                                        <li>
+                                            Retire da água, deixe amornar e sirva.
+                                        </li>
+                                    </ol>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="py-5 bg-light">
+            <div class="container text-center">
+                <h2>Sobre os Quatro Sabores</h2>
+                <p>
+                    Um projeto dedicado a explorar receitas
+                    tradicionais de diferentes países.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-4">
+        <p class="mb-0">
+            &copy; 2026 Os Quatro Sabores.
+        </p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript do projeto -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
