@@ -69,3 +69,28 @@
     font-weight: 700;
     color: #285943;
 }
+
+/* Centralizar Início e Receitas na barra superior */
+@media (min-width: 992px) {
+
+    .menu-centralizado {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-centralizado .navbar-collapse {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        flex-grow: 0;
+    }
+
+    .menu-centralizado .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+}

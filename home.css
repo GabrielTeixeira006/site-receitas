@@ -300,3 +300,67 @@ body {
         padding: 50px 0;
     }
 }
+
+/* Alinhamento do número 5 */
+.numero-titulo {
+    display: inline-block;
+    position: relative;
+    top: -5px;
+}
+
+.banner-inicio {
+    min-height: 550px;
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.15)
+        ),
+        url("img/banner/BannerSite.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.conteudo-banner {
+    max-width: 550px;
+    padding: 70px 0;
+}
+
+.conteudo-banner h1 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.conteudo-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .banner-inicio {
+        min-height: 450px;
+        background-position: 45% center;
+    }
+
+    .conteudo-banner {
+        padding: 50px 15px;
+    }
+}
+
+/* Destaque da opção ativa no menu */
+
+.menu-principal .nav-link {
+    color: #666;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-principal .nav-link.active {
+    color: #111;
+    font-weight: 600;
+    border-bottom: 2px solid #111;
+}
