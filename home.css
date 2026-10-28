@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+    --fundo: #f7f0e6;
+    --cartao: #fbf7f0;
+    --texto: #25221e;
+    --texto-secundario: #655d53;
+    --verde: #304b32;
+    --vermelho: #a53d2c;
+    --dourado: #bc852d;
+    --marrom: #784426;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* MENU */
+
+.menu-principal {
+    background-color: #fbf7f0;
+    border-bottom: 1px solid #e6dcd0;
+    padding: 15px 0;
+}
+
+.marca {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #211d19;
+}
+
+.marca:hover {
+    color: var(--verde);
+}
+
+.nav-link {
+    font-size: 14px;
+    color: #302b25;
+}
+
+.nav-link:hover {
+    color: var(--verde);
+}
+
+.nav-link.active {
+    font-weight: 700;
+    border-bottom: 2px solid var(--verde);
+}
+
+.icones-menu a {
+    color: #28231e;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icones-menu a:hover {
+    color: var(--verde);
+}
+
+/* SEÇÃO DOS PAÍSES */
+
+.secao-paises {
+    padding: 65px 0 90px;
+
+    background:
+        radial-gradient(
+            circle at 95% 10%,
+            rgba(220, 196, 166, 0.45),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 5% 85%,
+            rgba(224, 207, 183, 0.5),
+            transparent 30%
+        ),
+        var(--fundo);
+}
+
+.titulo-secao {
+    margin-bottom: 35px;
+}
+
+.titulo-secao h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 5vw, 55px);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.titulo-secao p {
+    font-size: 16px;
+    color: var(--texto-secundario);
+}
+
+/* CARDS */
+
+.pais-card {
+    background-color: var(--cartao);
+    border: 1px solid #e5dcd0;
+    border-radius: 14px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 22px rgba(50, 38, 23, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.pais-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(50, 38, 23, 0.16);
+}
+
+/* IMAGENS */
+
+.pais-card .card-img-top {
+    width: 100%;
+    height: 225px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* CONTEÚDO */
+
+.pais-card .card-body {
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pais-nome {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.pais-descricao {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--texto-secundario);
+    flex-grow: 1;
+}
+
+/* BOTÕES */
+
+.btn-pais {
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    padding: 11px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+.btn-pais:hover {
+    color: #fff;
+    filter: brightness(1.12);
+    transform: translateY(-2px);
+}
+
+.btn-pais i {
+    margin-left: 7px;
+}
+
+.btn-brasil,
+.btn-italia {
+    background-color: var(--verde);
+}
+
+.btn-japao {
+    background-color: var(--vermelho);
+}
+
+.btn-australia {
+    background-color: var(--dourado);
+}
+
+.btn-marrocos {
+    background-color: var(--marrom);
+}
+
+/* CARDS HORIZONTAIS */
+
+.pais-horizontal .foto-horizontal {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 235px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pais-horizontal .card-body {
+    height: 100%;
+    justify-content: center;
+}
+
+/* SOBRE */
+
+.secao-sobre {
+    padding: 70px 0;
+    background-color: #eee3d4;
+}
+
+.secao-sobre h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.secao-sobre p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--texto-secundario);
+}
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #2d402e;
+    color: #fff;
+    padding: 35px 0;
+}
+
+.marca-rodape {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.rodape p,
+.rodape small {
+    color: #e1e8de;
+    font-size: 13px;
+}
+
+/* TABLET */
+
+@media (max-width: 991px) {
+    .secao-paises {
+        padding: 45px 0 65px;
+    }
+
+    .icones-menu {
+        padding: 15px 0;
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 575px) {
+    .marca {
+        font-size: 21px;
+    }
+
+    .titulo-secao h1 {
+        font-size: 37px;
+    }
+
+    .titulo-secao p {
+        font-size: 14px;
+    }
+
+    .pais-card .card-img-top {
+        height: 215px;
+    }
+
+    .pais-horizontal .foto-horizontal {
+        height: 220px;
+        min-height: 0;
+    }
+
+    .pais-card .card-body {
+        padding: 20px;
+    }
+
+    .secao-sobre {
+        padding: 50px 0;
+    }
+}
