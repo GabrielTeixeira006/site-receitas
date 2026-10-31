@@ -1,3 +1,4 @@
+
 /* Imagens dos carrosséis */
 .receita-card .carousel-item img {
     width: 100%;
@@ -14,7 +15,7 @@
 /* Efeito ao passar o mouse */
 .receita-card .card {
     transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+        box-shadow 0.3s ease;
 }
 
 .receita-card .card:hover {
@@ -46,8 +47,7 @@
     border-color: #285943;
 }
 
-.ingredientes .form-check-input:checked
-+ .form-check-label {
+.ingredientes .form-check-input:checked+.form-check-label {
     text-decoration: line-through;
     color: #888;
 }

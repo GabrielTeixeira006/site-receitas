@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Tommy';
+    src: url('./MADE TOMMY Bold_PERSONAL USE.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
 
 :root {
     --fundo: #f7f0e6;
@@ -90,6 +95,7 @@ body {
 
 .titulo-secao {
     margin-bottom: 35px;
+    color: #243D2A;
 }
 
 .titulo-secao h1 {
@@ -102,6 +108,7 @@ body {
 .titulo-secao p {
     font-size: 16px;
     color: var(--texto-secundario);
+    
 }
 
 /* CARDS */
@@ -160,7 +167,7 @@ body {
 /* BOTÕES */
 
 .btn-pais {
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 9px;
     padding: 11px 18px;
@@ -174,7 +181,7 @@ body {
 }
 
 .btn-pais:hover {
-    color: #fff;
+    color: #919191;
     filter: brightness(1.12);
     transform: translateY(-2px);
 }
@@ -328,6 +335,7 @@ body {
 .conteudo-banner {
     max-width: 550px;
     padding: 70px 0;
+    font-family: 'Tommy';
 }
 
 .conteudo-banner h1 {
