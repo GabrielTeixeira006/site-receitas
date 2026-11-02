@@ -1,3 +1,106 @@
+@font-face {
+    font-family: 'Tommy';
+    src: url('./MADE TOMMY Bold_PERSONAL USE.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --fundo: #f7f0e6;
+    --cartao: #fbf7f0;
+    --texto: #25221e;
+    --texto-secundario: #655d53;
+    --verde: #304b32;
+    --vermelho: #a53d2c;
+    --dourado: #bc852d;
+    --marrom: #784426;
+    --verde-escuro: #2d402e;
+}
+
+/*Navbar*/
+.menu-principal {
+    background-color: #fbf7f0;
+    border-bottom: 1px solid #e6dcd0;
+    padding: 15px 0;
+}
+
+.marca {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2d402e;
+}
+
+.marca:hover {
+    color: var(--dourado);
+}
+
+.nav-link {
+    font-size: 14px;
+    color: #302b25;
+}
+
+.nav-link:hover {
+    color: var(--verde);
+}
+
+.nav-link.active {
+    font-weight: 700;
+    border-bottom: 2px solid var(--verde);
+}
+
+.icones-menu a {
+    color: #28231e;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icones-menu a:hover {
+    color: var(--verde);
+}
+
+.secao-brasil {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("img/banner/Panorama\ Dourado\ do\ Rio\ de\ Janeiro.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+body {
+    background-color: #f7f0e6;
+}
+
+.titulo-receitas {
+    color: #2d402e;
+    font-family: 'Tommy';
+}
+
+.filtro {
+    background-color: var(--verde-escuro);
+    color: #ffffff;
+    border: 1px solid var(--verde-escuro);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.filtro:hover {
+    background-color: #244B38;
+    color: white;
+    border-color: #244B38;
+}
 
 /* Imagens dos carrosséis */
 .receita-card .carousel-item img {
@@ -21,6 +124,66 @@
 .receita-card .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    
+}
+
+.btn-receita {
+    background-color: var(--verde-escuro);
+    color: #FFFFFF;
+    border: 1px solid var(--verde-escuro);
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+.btn-receita:hover {
+    background-color: transparent;
+    color: #888888;
+    border-color: transparent;
+}
+
+.badge-tipo {
+    background-color: var(--verde-escuro);
+    color: #FFFFFF;
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.btn-receita-doce {
+    background-color: var(--verde-escuro);
+    color: #FFFFFF;
+    border: 1px solid var(--verde-escuro);
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+
+.btn-receita-doce:hover {
+    background-color: transparent;
+    color: #888888;
+    border-color: transparent;
+}
+
+.badge-tipo-doce {
+    background-color: var(--dourado);
+    color: #FFFFFF;
+
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+
+    padding: 5px 10px;
+    border-radius: 6px;
 }
 
 /* Ajuste para celulares */

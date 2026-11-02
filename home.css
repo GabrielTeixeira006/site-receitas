@@ -43,11 +43,11 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 700;
-    color: #211d19;
+    color: #2d402e;
 }
 
 .marca:hover {
-    color: var(--verde);
+    color: var(--dourado);
 }
 
 .nav-link {
