@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>5 Continentes, 10 Sabores</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- CABEÇALHO -->
+    <header>
+        <nav class="navbar navbar-expand-lg menu-principal menu-centralizado">
+            <div class="container">
+
+                <!-- LOGO -->
+                <a class="navbar-brand marca" href="index.html">
+                    <h4 class="marca-titulo" style="font-family: 'Tommy';">5 Continentes, 10 Sabores</h4>
+                </a>
+
+                <!-- MENU MOBILE -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- LINKS -->
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav mx-auto gap-lg-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                Início
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index6.html">
+                                Receitas
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <!-- APRESENTAÇÃO DO MARROCOS-->
+        <section id="paises" class="secao-brasil py-5">
+            <div class="container text-center">
+
+                <p class="mb-2">Países / Marrocos</p>
+
+                <h1 class="display-4 fw-bold" style="font-family: 'Tommy';">Marrocos</h1>
+
+                <p class="lead">
+                    Descubra os sabores da culinária marroquina,
+                    uma mistura de tradições, culturas e ingredientes.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- LISTA DE RECEITAS -->
+        <section id="marrocos" class="py-5">
+            <div class="container">
+
+                <h2 class="text-center mb-4 titulo-receitas">
+                    Receitas Marroquinas
+                </h2>
+
+                <!-- FILTROS -->
+                <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+                    <button class="btn btn-success filtro" data-filtro="todos">
+                        Todas (2)
+                    </button>
+
+                    <button class="btn btn-outline-success filtro" data-filtro="salgado">
+                        Salgadas (1)
+                    </button>
+
+                    <button class="btn btn-outline-success filtro" data-filtro="doce">
+                        Doces (1)
+                    </button>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- PASTILLA -->
+                    <div class="col-12 col-md-6 receita-card" data-tipo="salgado">
+                        <article class="card shadow-sm">
+
+                            <!-- CARROSSEL PASTILLA -->
+                            <div id="carouselPastilla" class="carousel slide" data-bs-ride="false">
+
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselPastilla" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Foto 1"></button>
+
+                                    <button type="button" data-bs-target="#carouselPastilla" data-bs-slide-to="1"
+                                        aria-label="Foto 2"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <img src="img/comidas/Pastilla 1.png" class="d-block w-100"
+                                            alt="Primeira foto do Pastilla">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="img/comidas/Pastilla 2.png" class="d-block w-100"
+                                            alt="Segunda foto do Pastilla">
+                                    </div>
+
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPastilla"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselPastilla"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próxima</span>
+                                </button>
+
+                            </div>
+
+                            <div class="card-body">
+                                <span class="badge badge-tipo mb-2">
+                                    Salgado
+                                </span>
+
+                                <h3 class="card-title h4" style="font-family: 'Tommy';">
+                                    Pastilla
+                                </h3>
+
+                                <p class="card-text">
+                                    A pastilla marroquina é um pastel salgado ou doce feito com massa fina (filo ou folhada) 
+                                    e recheado com carne suave — geralmente frango, pombo ou borrego misturada com especiarias doces, 
+                                    amêndoas e, às vezes, ovos, sendo um prato festivo típico de Marrocos.
+                                </p>
+
+                                <button class="btn btn-receita" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#detalhesPastilla" aria-expanded="false" aria-controls="detalhesPastilla">
+                                    Ver receita
+                                </button>
+
+                                <!-- DETALHES DO PASTILLA -->
+                                <div class="collapse" id="detalhesPastilla">
+
+                                    <hr>
+
+                                    <h4 class="mb-3" style="font-family: 'Tommy';">Ingredientes</h4>
+
+                                    <div class="ingredientes">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing1">
+                                            <label class="form-check-label" for="pastilla-ing1">
+                                                700 g de frango (coxa ou peito)
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing2">
+                                            <label class="form-check-label" for="pastilla-ing2">
+                                                2 cebolas grandes picadas
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing3">
+                                            <label class="form-check-label" for="pastilla-ing3">
+                                                3 ovos
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing4">
+                                            <label class="form-check-label" for="pastilla-ing4">
+                                                100 g de amêndoas sem pele
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing5">
+                                            <label class="form-check-label" for="pastilla-ing5">
+                                                2 colheres de sopa de manteiga
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing6">
+                                            <label class="form-check-label" for="pastilla-ing6">
+                                                1 colher de chá de gengibre em pó
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing7">
+                                            <label class="form-check-label" for="pastilla-ing7">
+                                                1 colher de chá de canela
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing8">
+                                            <label class="form-check-label" for="pastilla-ing8">
+                                                ½ colher de chá de cúrcuma
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing9">
+                                            <label class="form-check-label" for="pastilla-ing9">
+                                                Açafrão a gosto
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing10">
+                                            <label class="form-check-label" for="pastilla-ing10">
+                                                Sal e pimenta-do-reino
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing11">
+                                            <label class="form-check-label" for="pastilla-ing11">
+                                                Salsinha e coentro picados
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="pastilla-ing12">
+                                            <label class="form-check-label" for="pastilla-ing12">
+                                                150 ml de água ou caldo de frango
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <hr>
+
+                                    <h4 class="mb-3" style="font-family: 'Tommy';">Modo de preparo</h4>
+
+                                    <ol class="modo-preparo">
+                                        <li>
+                                            Preparação e cozimento do frango
+                                        </li>
+                                        <li>
+                                            Em uma panela grande, aqueça a manteiga em fogo médio.
+                                        </li>
+                                        <li>
+                                            Acrescente as cebolas picadas e refogue até ficarem macias e transparentes.
+                                        </li>
+                                        <li>
+                                            Adicione o frango, o gengibre, a canela, a cúrcuma, o açafrão, o sal e a pimenta-do-reino.
+                                        </li>
+                                        <li>
+                                            Acrescente a água ou o caldo de frango.
+                                        </li>
+                                        <li>
+                                            Tampe a panela e cozinhe em fogo médio-baixo por aproximadamente 30 a 40 minutos, até o frango ficar bem macio.
+                                        </li>
+                                        <li>
+                                            Retire o frango da panela, deixe amornar e desfie em pedaços pequenos.
+                                        </li>
+                                        <li>
+                                            Reserve o frango desfiado.
+                                        </li>
+                                        <li>
+                                            Preparação do molho de ovos
+                                        </li>
+                                        <li>
+                                            Mantenha o molho de cebola na panela.
+                                        </li>
+                                        <li>
+                                            Se houver muito líquido, deixe cozinhar sem tampa até reduzir.
+                                        </li>
+                                        <li>
+                                            Bata os ovos em uma tigela.
+                                        </li>
+                                        <li>
+                                            Acrescente os ovos ao molho de cebola, mexendo continuamente em fogo baixo.
+                                        </li>
+                                        <li>
+                                            Cozinhe até formar uma mistura cremosa, úmida, porém consistente.
+                                        </li>
+                                        <li>
+                                            Desligue o fogo e reserve.
+                                        </li>
+                                        <li>
+                                            Preparação das amêndoas
+                                        </li>
+                                        <li>
+                                            Retire a pele das amêndoas, caso ainda tenham.
+                                        </li>
+                                        <li>
+                                            Aqueça uma frigideira com um pouco de manteiga.
+                                        </li>
+                                        <li>
+                                            Acrescente as amêndoas e torre até ficarem levemente douradas.
+                                        </li>
+                                        <li>
+                                            Retire do fogo e deixe esfriar.
+                                        </li>
+                                        <li>
+                                            Pique grosseiramente e misture com uma pitada de canela.
+                                        </li>
+                                        <li>
+                                            Preparação da massa
+                                        </li>
+                                        <li>
+                                            Preaqueça o forno a 180 °C.
+                                        </li>
+                                        <li>
+                                            Derreta a manteiga.
+                                        </li>
+                                        <li>
+                                            Unte uma forma redonda com manteiga.
+                                        </li>
+                                        <li>
+                                            Disponha as folhas de massa filo sobre a forma, deixando as extremidades ultrapassarem as bordas.
+                                        </li>
+                                        <li>
+                                            Pincele manteiga derretida entre as folhas para garantir uma textura crocante.
+                                        </li>
+                                        <li>
+                                            Montagem da Pastilla
+                                        </li>
+                                        <li>
+                                            Distribua o frango desfiado sobre a primeira camada de massa.
+                                        </li>
+                                        <li>
+                                            Acrescente a mistura de ovos e cebolas.
+                                        </li>
+                                        <li>
+                                            Distribua as amêndoas torradas por cima.
+                                        </li>
+                                        <li>
+                                            Dobre as extremidades da massa para dentro, cobrindo o recheio.
+                                        </li>
+                                        <li>
+                                            Coloque mais folhas de massa filo por cima, se necessário, para fechar completamente.
+                                        </li>
+                                        <li>
+                                            Pincele toda a superfície com gema de ovo.
+                                        </li>
+                                        <li>
+                                            Assamento
+                                        </li>
+                                        <li>
+                                            Leve ao forno preaquecido a 180 °C.
+                                        </li>
+                                        <li>
+                                            Asse por aproximadamente 25 a 35 minutos.
+                                        </li>
+                                        <li>
+                                            Observe até a superfície ficar dourada, crocante e uniforme.
+                                        </li>
+                                        <li>
+                                            Retire do forno e deixe descansar por aproximadamente 10 minutos antes de desenformar.
+                                        </li>
+                                        <li>
+                                            Finalização e apresentação
+                                        </li>
+                                        <li>
+                                            Coloque a Pastilla em um prato grande de apresentação.
+                                        </li>
+                                        <li>
+                                            Polvilhe açúcar de confeiteiro sobre a superfície.
+                                        </li>
+                                        <li>
+                                            Faça desenhos decorativos com canela em pó.
+                                        </li>
+                                        <li>
+                                            Decore com algumas amêndoas torradas.
+                                        </li>
+                                    
+                                    </ol>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- BRIOUT DOCE -->
+                    <div class="col-12 col-md-6 receita-card" data-tipo="doce">
+                        <article class="card shadow-sm">
+
+                            <!-- CARROSSEL BRIOUT DOCE -->
+                            <div id="carouselBriouat" class="carousel slide" data-bs-ride="false">
+
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselBriouat" data-bs-slide-to="0"
+                                        class="active" aria-current="true" aria-label="Foto 1"></button>
+
+                                    <button type="button" data-bs-target="#carouselBriouat" data-bs-slide-to="1"
+                                        aria-label="Foto 2"></button>
+                                </div>
+
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <img src="img/comidas/Briouat 1.png" class="d-block w-100"
+                                            alt="Primeira foto da Briouat Doce">
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <img src="img/comidas/Briouat 2.png" class="d-block w-100"
+                                            alt="Segunda foto da Briout Doce">
+                                    </div>
+
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBriouat"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselBriouat"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Próxima</span>
+                                </button>
+
+                            </div>
+
+                            <div class="card-body">
+                                <span class="badge badge-tipo badge-tipo-doce mb-2">
+                                    Doce
+                                </span>
+
+                                <h3 class="card-title h4" style="font-family: 'Tommy';">
+                                    Briouat Doce
+                                </h3>
+
+                                <p class="card-text">
+                                    Os briouats são tradicionais da culinária do Marrocos, presentes em festas, 
+                                    celebrações e especialmente durante o Ramadã. 
+                                    A palavra se refere ao formato de pequenos pastéis
+                                    dobrados em triângulo ou rolo, recheados e fritos.
+                                </p>
+
+                                <button class="btn btn-receita-doce" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#detalhesBriouat" aria-expanded="false"
+                                    aria-controls="detalhesBriouat">
+                                    Ver receita
+                                </button>
+
+                                <!-- DETALHES DA BRIOUAT DOCE -->
+                                <div class="collapse" id="detalhesBriouat">
+
+                                    <hr>
+
+                                    <h4 class="mb-3" style="font-family: 'Tommy';">Ingredientes</h4>
+
+                                    <div class="ingredientes">
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing1">
+                                            <label class="form-check-label" for="briouat-ing1">
+                                                250 g de amêndoas sem pele
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing2">
+                                            <label class="form-check-label" for="briouat-ing2">
+                                                100 g de açúcar
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing3">
+                                            <label class="form-check-label" for="briouat-ing3">
+                                               1 colher de chá de canela em pó
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing4">
+                                            <label class="form-check-label" for="briouat-ing4">
+                                               2 colheres de sopa de manteiga derretida
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing5">
+                                            <label class="form-check-label" for="briouat-ing5">
+                                                1 colher de sopa de água de flor de laranjeira
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing6">
+                                            <label class="form-check-label" for="briouat-ing6">
+                                                Uma pitada de goma arábica moída (opcional)
+                                            </label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing7">
+                                            <label class="form-check-label" for="briouat-ing7">
+                                                10 folhas de massa filo ou massa warqa
+                                            </label>
+                                        </div>   
+
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing8">
+                                            <label class="form-check-label" for="briouat-ing8">
+                                                50 g de manteiga derretida
+                                            </label>
+                                        </div>  
+                                    
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing9">
+                                            <label class="form-check-label" for="briouat-ing9">
+                                                1 colher de sopa de farinha misturada com água (para selar)
+                                            </label>
+                                        </div>  
+                                    
+                                         <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing10">
+                                            <label class="form-check-label" for="briouat-ing10">
+                                                300 g de mel
+                                            </label>
+                                        </div> 
+                                    
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing11">
+                                            <label class="form-check-label" for="briouat-ing11">
+                                                1 colher de chá de água de flor de laranjeira
+                                            </label>
+                                        </div> 
+                                    
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="briouat-ing12">
+                                            <label class="form-check-label" for="briouat-ing12">
+                                                Gergelim torrado (opcional)
+                                            </label>
+                                        </div> 
+                                    
+                                    </div>
+
+                                    <hr>
+
+                                    <h4 class="mb-3" style="font-family: 'Tommy';">Modo de preparo</h4>
+
+                                    <ol class="modo-preparo">
+                                        <li>
+                                            Preparação das amêndoas
+                                        </li>
+                                        <li>
+                                            Coloque uma panela com água para ferver.
+                                        </li>
+                                        <li>
+                                            Acrescente as amêndoas e deixe por aproximadamente 2 minutos.
+                                        </li>
+                                        <li>
+                                            Escorra e retire a pele das amêndoas.
+                                        </li>
+                                        <li>
+                                            Seque bem e frite em óleo ou torre em uma frigideira até ficarem levemente douradas.
+                                        </li>
+                                        <li>
+                                            Retire e deixe esfriar completamente.
+                                        </li>
+                                        <li>
+                                            Preparação do recheio
+                                        </li>
+                                        <li>
+                                            Coloque as amêndoas no processador ou liquidificador.
+                                        </li>
+                                        <li>
+                                            Acrescente o açúcar e triture até obter uma farofa fina.
+                                        </li>
+                                        <li>
+                                            Adicione a canela, a manteiga derretida e a água de flor de laranjeira.
+                                        </li>
+                                        <li>
+                                            Misture até formar uma pasta homogênea e moldável.
+                                        </li>
+                                        <li>
+                                            Modele pequenas porções de recheio em formato de bolinhas ou pequenos cilindros.
+                                        </li>
+                                        <li>
+                                            Reserve.
+                                        </li>
+                                        <li>
+                                            Preparação da massa
+                                        </li>
+                                        <li>
+                                            Abra as folhas de massa filo sobre uma superfície limpa e seca.
+                                        </li>
+                                        <li>
+                                            Corte a massa em tiras compridas de aproximadamente 5 cm de largura.
+                                        </li>
+                                        <li>
+                                            Cubra as tiras que não estiver utilizando com um pano limpo levemente úmido para evitar que ressequem.
+                                        </li>
+                                        <li>
+                                            Pincele levemente cada tira com manteiga derretida.
+                                        </li>
+                                        <li>
+                                            Modelagem dos briouats
+                                        </li>
+                                        <li>
+                                            Coloque uma pequena porção do recheio de amêndoas em uma das extremidades da tira.
+                                        </li>
+                                        <li>
+                                            Dobre a ponta da massa sobre o recheio, formando um triângulo.
+                                        </li>
+                                        <li>
+                                           Continue dobrando o triângulo sobre si mesmo, alternando os lados até chegar ao final da tira. 
+                                        </li>
+                                        <li>
+                                            Feche a ponta com uma mistura de farinha e água.
+                                        </li>
+                                        <li>
+                                            Repita o processo até terminar o recheio.
+                                        </li>
+                                        <li>
+                                            Fritura
+                                        </li>
+                                        <li>
+                                            Coloque óleo suficiente em uma panela para cobrir parcialmente os doces.
+                                        </li>
+                                        <li>
+                                            Aqueça em fogo médio, aproximadamente 160–170 °C.
+                                        </li>
+                                        <li>
+                                            Coloque os briouats aos poucos, evitando sobrecarregar a panela.
+                                        </li>
+                                        <li>
+                                            Frite até ficarem dourados e crocantes dos dois lados.
+                                        </li>
+                                        <li>
+                                            Retire com uma escumadeira.
+                                        </li>
+                                        <li>
+                                            Coloque sobre papel absorvente para retirar o excesso de óleo.
+                                        </li>
+                                        <li>
+                                            Preparação do mel
+                                        </li>
+                                        <li>
+                                            Coloque o mel em uma panela pequena.
+                                        </li>
+                                        <li>
+                                            Acrescente a água de flor de laranjeira.
+                                        </li>
+                                        <li>
+                                            Aqueça em fogo baixo, apenas até ficar mais fluido.
+                                        </li>                                            
+                                        <li>
+                                            Não deixe ferver.
+                                        </li>
+                                        <li>
+                                            Banho de mel
+                                        </li>
+                                        <li>
+                                            Enquanto os briouats ainda estiverem quentes, mergulhe-os no mel morno.
+                                        </li>
+                                        <li>
+                                            Deixe absorver por aproximadamente 30 a 60 segundos.
+                                        </li>
+                                        <li>
+                                            Retire cuidadosamente com uma escumadeira.
+                                        </li>
+                                        <li>
+                                            Coloque sobre uma grade para escorrer o excesso de mel.
+                                        </li>
+                                        <li>
+                                            Finalização e apresentação
+                                        </li>
+                                        <li>
+                                            Disponha os briouats em uma travessa.
+                                        </li>
+                                        <li>
+                                            Polvilhe gergelim torrado por cima.
+                                        </li>
+                                        <li>
+                                            Se desejar, decore com amêndoas trituradas.
+                                        </li>
+                                        <li>
+                                            Deixe esfriar antes de servir.
+                                        </li>
+                                    
+                                    </ol>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="text-center py-4">
+        <p class="mb-0">
+            &copy; 2026 5 Continentes, 10 Sabores.
+        </p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript do projeto -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
