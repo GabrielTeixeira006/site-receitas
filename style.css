@@ -21,8 +21,8 @@
 
 /*Navbar*/
 .menu-principal {
-    background-color: #fbf7f0;
-    border-bottom: 1px solid #e6dcd0;
+    background-color: #3D5A40;
+    border-bottom: 1px solid #527653;
     padding: 15px 0;
 }
 
@@ -30,20 +30,20 @@
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 700;
-    color: #2d402e;
+    color: #D9A441;
 }
 
 .marca:hover {
-    color: var(--dourado);
+    color: #F0C878;
 }
 
 .nav-link {
-    font-size: 14px;
-    color: #302b25;
+    color: #E8DCC5;
+    font-size: 15px;
 }
 
 .nav-link:hover {
-    color: var(--verde);
+    color: #D9A441;
 }
 
 .nav-link.active {
@@ -61,11 +61,23 @@
     color: var(--verde);
 }
 
-.secao-brasil {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-        url("img/banner/Panorama\ Dourado\ do\ Rio\ de\ Janeiro.png");
+/* Mantém os cards independentes */
+.receita-card {
+    align-self: flex-start;
+}
 
+/* Alinha os cards quando estão fechados */
+.receita-card .card-body {
+    min-height: 260px;
+}
+
+/* Remove a altura mínima ao abrir uma receita */
+.receita-card .card:has(.collapse.show) .card-body,
+.receita-card .card:has(.collapsing) .card-body {
+    min-height: 0;
+}
+
+.secao-banner {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,6 +88,36 @@
     justify-content: center;
 
     color: white;
+}
+
+.banner-brasil {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("img/banner/Panorama\ Dourado\ do\ Rio\ de\ Janeiro.png");
+}
+
+.banner-italia {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("img/banner/Vila\ Costeira\ Italiana\ ao\ Pôr\ do\ Sol.png");
+}
+
+.banner-japao {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("img/banner/Pôr\ do\ Sol\ no\ Monte\ Fuji.png");
+}
+
+.banner-marrocos {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("img/banner/Pôr\ do\ Sol\ sobre\ Kasbah\ Marroquina.png");
+}
+
+.banner-australia {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("img/banner/Pôr\ do\ Sol\ sobre\ Uluru\ com\ Canguru.png");
 }
 
 body {
