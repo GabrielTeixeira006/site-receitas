@@ -2,7 +2,7 @@
 
 Sobre o projeto
 
-O 5 Continentes, 10 Sabores é um site desenvolvido como projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas (ADS).
+O 5 Continentes, 10 Sabores é um site desenvolvido como projeto acadêmico.
 
 O projeto reúne cinco países, cada um representando um continente, com duas receitas típicas que apresentam um pouco da diversidade gastronômica de cada região.
 
