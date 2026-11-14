@@ -63,8 +63,14 @@
 
 /* Mantém os cards independentes */
 .receita-card {
-    align-self: flex-start;
+    align-self: stretch;
+    display: flex;
 }
+
+.receitas.card .card {
+    width: 100%;
+}
+
 
 /* Alinha os cards quando estão fechados */
 .receita-card .card-body {
